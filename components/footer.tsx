@@ -3,14 +3,14 @@ import { Shield, Phone, Mail, MapPin } from "lucide-react"
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Shield className="h-6 w-6" />
-              <span className="text-lg font-bold">Kalpakis Insurance Group</span>
+              <Shield className="h-5 w-5 sm:h-6 sm:w-6" />
+              <span className="text-base sm:text-lg font-bold">Kalpakis Insurance Group</span>
             </div>
-            <p className="text-primary-foreground/80 text-pretty">
+            <p className="text-sm sm:text-base text-primary-foreground/80 text-pretty">
               Reliable Guidance | Unbiased Carrier Access | Memorable Service | Authentic Connections
             </p>
           </div>
@@ -81,8 +81,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-          <p>© 2025 Kalpakis Insurance Group, LLC. All rights reserved.</p>
+        <div className="border-t border-primary-foreground/20 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-primary-foreground/60">
+          <p className="text-sm sm:text-base">© 2025 Kalpakis Insurance Group, LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>

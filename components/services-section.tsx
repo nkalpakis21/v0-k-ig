@@ -25,16 +25,16 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-balance">Insurance Solutions for Every Need</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-balance">Insurance Solutions for Every Need</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
             We offer comprehensive insurance options to protect you, your family, and your assets with personalized service at competitive rates.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-border hover:shadow-lg transition-shadow">
               <CardHeader>
