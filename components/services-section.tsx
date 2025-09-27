@@ -7,19 +7,19 @@ const services = [
     icon: User,
     title: "Personal Insurance",
     description: "Personalized coverage for individuals and families with flexible options to protect your assets and lifestyle.",
-    features: ["Auto Coverage", "Home Protection", "Personal Liability", "Umbrella Policies"],
+    features: ["Home Protection", "Auto Coverage", "Umbrella Policies","Renters, Motorcycles, RV, Boats"],
   },
   {
     icon: Building2,
     title: "Commercial Insurance",
     description: "Comprehensive business protection with tailored coverage for your company's unique needs and risks.",
-    features: ["General Liability", "Property Coverage", "Workers Compensation", "Business Interruption"],
+    features: ["Business Owners Policy", "General Liability", "Property Coverage", "Commercial Auto"],
   },
   {
     icon: Heart,
     title: "Life Insurance",
     description: "Secure your family's future with life insurance solutions that provide financial protection and peace of mind.",
-    features: ["Term Life", "Whole Life", "Universal Life", "Final Expense"],
+    features: ["Term Life", "Whole Life", "Universal Life", "Mortage Protection"],
   },
 ]
 
@@ -56,9 +56,12 @@ export function ServicesSection() {
                 <Button
                   variant="outline"
                   className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+                  asChild
                 >
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <a href="#contact">
+                    Contact Us to Learn More
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </CardContent>
             </Card>

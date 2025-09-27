@@ -19,17 +19,17 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-primary-foreground/80">
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <a href="#services" className="hover:text-accent transition-colors">
                   Personal Insurance
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <a href="#services" className="hover:text-accent transition-colors">
                   Commercial Insurance
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <a href="#services" className="hover:text-accent transition-colors">
                   Life Insurance
                 </a>
               </li>
@@ -47,11 +47,6 @@ export function Footer() {
               <li>
                 <a href="#" className="hover:text-accent transition-colors">
                   About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-accent transition-colors">
-                  Claims
                 </a>
               </li>
               <li>

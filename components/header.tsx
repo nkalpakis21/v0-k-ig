@@ -27,10 +27,16 @@ export function Header() {
             <Button
               variant="outline"
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent font-bold text-base"
+              asChild
             >
-              Contact Us
+              <a href="#contact">Contact Us</a>
             </Button>
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-base">Get Quote</Button>
+            <Button 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-base"
+              asChild
+            >
+              <a href="#contact">Get Quote</a>
+            </Button>
           </div>
         </div>
       </div>
