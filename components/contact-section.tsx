@@ -4,16 +4,16 @@ import { Phone, Mail } from "lucide-react"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-balance">Contact Us</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-balance">Contact Us</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
             Ready to get started? We're here to help you find the perfect insurance coverage for your needs.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
           {/* Phone Contact */}
           <Card className="border-border hover:shadow-lg transition-shadow flex flex-col">
             <CardHeader className="flex-1">
