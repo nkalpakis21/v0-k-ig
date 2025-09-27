@@ -37,7 +37,7 @@ export function HeroSection() {
 
           <div className="relative order-1 lg:order-2">
             <img
-              src="/kalpakisig.png"
+              src="/happy-family-in-front-of-modern-home-with-car-in-d.jpg"
               alt="Happy family with their home and car"
               className="rounded-lg shadow-2xl w-full h-auto"
             />
