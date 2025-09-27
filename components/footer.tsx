@@ -20,17 +20,17 @@ export function Footer() {
             <ul className="space-y-2 text-primary-foreground/80">
               <li>
                 <a href="#" className="hover:text-accent transition-colors">
-                  Auto Insurance
+                  Personal Insurance
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-accent transition-colors">
-                  Home Insurance
+                  Commercial Insurance
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-accent transition-colors">
-                  Renters Insurance
+                  Life Insurance
                 </a>
               </li>
               <li>
