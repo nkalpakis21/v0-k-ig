@@ -1,25 +1,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Car, Home, Users, ArrowRight } from "lucide-react"
+import { Building2, User, Heart, ArrowRight } from "lucide-react"
 
 const services = [
   {
-    icon: Car,
-    title: "Auto Insurance",
-    description: "Comprehensive coverage for your vehicle with competitive rates and excellent customer service.",
-    features: ["Liability Coverage", "Collision & Comprehensive", "24/7 Claims Support", "Multi-Car Discounts"],
+    icon: Building2,
+    title: "Commercial Insurance",
+    description: "Comprehensive business protection with tailored coverage for your company's unique needs and risks.",
+    features: ["General Liability", "Property Coverage", "Workers Compensation", "Business Interruption"],
   },
   {
-    icon: Home,
-    title: "Home Insurance",
-    description: "Protect your home and belongings with customizable coverage options tailored to your needs.",
-    features: ["Dwelling Protection", "Personal Property", "Liability Coverage", "Additional Living Expenses"],
+    icon: User,
+    title: "Personal Insurance",
+    description: "Personalized coverage for individuals and families with flexible options to protect your assets and lifestyle.",
+    features: ["Auto Coverage", "Home Protection", "Personal Liability", "Umbrella Policies"],
   },
   {
-    icon: Users,
-    title: "Renters Insurance",
-    description: "Affordable protection for your personal belongings and liability coverage for renters.",
-    features: ["Personal Property", "Liability Protection", "Additional Living Expenses", "Medical Payments"],
+    icon: Heart,
+    title: "Life Insurance",
+    description: "Secure your family's future with life insurance solutions that provide financial protection and peace of mind.",
+    features: ["Term Life", "Whole Life", "Universal Life", "Final Expense"],
   },
 ]
 
