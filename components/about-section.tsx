@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Shield, Users, Target, Heart } from "lucide-react"
+import { Shield, Users, Target, Handshake } from "lucide-react"
 
 export function AboutSection() {
   return (
@@ -62,7 +62,7 @@ export function AboutSection() {
           <Card className="border-border hover:shadow-lg transition-shadow flex flex-col">
             <CardHeader className="flex-1">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Heart className="h-6 w-6 text-primary" />
+                <Handshake className="h-6 w-6 text-primary" />
               </div>
               <CardTitle className="text-xl">Authentic Connections</CardTitle>
               <CardDescription className="text-pretty">
