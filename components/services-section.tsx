@@ -4,16 +4,16 @@ import { Building2, User, Heart, ArrowRight } from "lucide-react"
 
 const services = [
   {
-    icon: Building2,
-    title: "Commercial Insurance",
-    description: "Comprehensive business protection with tailored coverage for your company's unique needs and risks.",
-    features: ["General Liability", "Property Coverage", "Workers Compensation", "Business Interruption"],
-  },
-  {
     icon: User,
     title: "Personal Insurance",
     description: "Personalized coverage for individuals and families with flexible options to protect your assets and lifestyle.",
     features: ["Auto Coverage", "Home Protection", "Personal Liability", "Umbrella Policies"],
+  },
+  {
+    icon: Building2,
+    title: "Commercial Insurance",
+    description: "Comprehensive business protection with tailored coverage for your company's unique needs and risks.",
+    features: ["General Liability", "Property Coverage", "Workers Compensation", "Business Interruption"],
   },
   {
     icon: Heart,
