@@ -19,7 +19,7 @@ export function HeroSection() {
                 className="bg-primary hover:bg-primary/90 font-bold text-sm sm:text-base w-full sm:w-auto"
                 asChild
               >
-                <a href="#contact">Get Quote</a>
+                <a href="https://form.jotform.com/252594970207059" target="_blank" rel="noopener noreferrer">Get Quote</a>
               </Button>
               <Button
                 size="lg"

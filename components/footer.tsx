@@ -34,7 +34,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <a href="https://form.jotform.com/252594970207059" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                   Get a Quote
                 </a>
               </li>
