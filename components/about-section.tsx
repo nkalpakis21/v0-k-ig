@@ -8,7 +8,7 @@ export function AboutSection() {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-balance">About Kalpakis Insurance Group</h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-4xl mx-auto text-pretty">
-            Jesse Kalpakis comes from serving as managing partner of an independent insurance franchise, where he gained firsthand insight into what works—and where the industry as a whole often falls short. Out of that experience, he founded Kalpakis Insurance Group, LLC with a mission of doing things differently.
+            Jesse Kalpakis has served as managing partner of an independent insurance franchise, where he gained firsthand insight into what works—and where the industry as a whole often falls short. Out of that experience, he founded Kalpakis Insurance Group, LLC with a mission of doing things differently.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export function AboutSection() {
               </div>
               <CardTitle className="text-xl">Memorable Service</CardTitle>
               <CardDescription className="text-pretty">
-                We supplement, never sacrifice, customer service with Tech & AI. And our agency is enthusiastically by your side for the life of your policy, not just the day you sign it.
+                We supplement, never sacrifice, customer service with Tech & AI. Our agency is enthusiastically by your side for the life of your policy, not just the day you sign it.
               </CardDescription>
             </CardHeader>
           </Card>
