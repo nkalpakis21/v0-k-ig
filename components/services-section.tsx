@@ -7,19 +7,25 @@ const services = [
     icon: User,
     title: "Personal Insurance",
     description: "Personalized coverage for individuals and families with flexible options to protect your assets and lifestyle.",
-    features: ["Home Protection", "Auto Coverage", "Umbrella Policies","Renters, Motorcycles, RV, Boats"],
+    features: ["Homeowners", "Auto", "Flood", "Umbrella, Renters, Motorcycle, RV, Boat, +"],
   },
   {
     icon: Building2,
-    title: "Commercial Insurance",
+    title: "Investment Properties",
+    description: "Customized coverage for landlords and investors designed to protect you, your property, your income, and long-term investment goals.",
+    features: ["Rentals", "Flips", "Vacants", "Builders Risk"],
+  },
+  {
+    icon: Building2,
+    title: "Business Insurance",
     description: "Comprehensive business protection with tailored coverage for your company's unique needs and risks.",
-    features: ["Business Owners Policy", "General Liability", "Property Coverage", "Commercial Auto"],
+    features: ["Business Owners Policy (BOP)", "General Liability & Commercial Property", "Professional Liability", "Commercial Auto, Workers Comp, Cyber, +"],
   },
   {
     icon: Heart,
     title: "Life Insurance",
-    description: "Secure your family's future with life insurance solutions that provide financial protection and peace of mind.",
-    features: ["Term Life", "Whole Life", "Universal Life", "Mortage Protection"],
+    description: "Coming soon - Secure your family's future with life insurance solutions that provide financial protection and peace of mind.",
+    features: ["Term Life", "Whole Life", "Universal Life", "Mortgage Protection"],
   },
 ]
 
@@ -28,13 +34,10 @@ export function ServicesSection() {
     <section id="services" className="py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-balance">Insurance Solutions for Every Need</h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            We offer comprehensive insurance options to protect you, your family, and your assets with personalized service at competitive rates.
-          </p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-balance">Personalized, Competitive Coverage Options for a Variety of Needs</h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-border hover:shadow-lg transition-shadow">
               <CardHeader>

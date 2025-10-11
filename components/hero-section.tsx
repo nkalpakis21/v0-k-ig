@@ -37,7 +37,7 @@ export function HeroSection() {
 
           <div className="relative order-1 lg:order-2">
             <img
-              src="/kalpakisig.png"
+              src="/hero.png"
               alt="Kalpakis Insurance Group"
               className="rounded-lg shadow-2xl w-full h-auto"
             />

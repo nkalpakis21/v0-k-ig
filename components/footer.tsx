@@ -25,7 +25,12 @@ export function Footer() {
               </li>
               <li>
                 <a href="#services" className="hover:text-accent transition-colors">
-                  Commercial Insurance
+                  Investment Properties
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="hover:text-accent transition-colors">
+                  Business Insurance
                 </a>
               </li>
               <li>
@@ -57,6 +62,11 @@ export function Footer() {
               <li>
                 <a href="#" className="hover:text-accent transition-colors">
                   Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-accent transition-colors">
+                  Terms & Conditions
                 </a>
               </li>
             </ul>
