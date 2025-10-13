@@ -1,25 +1,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Building2, User, Heart, ArrowRight } from "lucide-react"
+import { Building2, User, Heart, ArrowRight, Home } from "lucide-react"
 
 const services = [
   {
     icon: User,
     title: "Personal Insurance",
     description: "Personalized coverage for individuals and families with flexible options to protect your assets and lifestyle.",
-    features: ["Homeowners", "Auto", "Flood", "Umbrella, Renters, Motorcycle, RV, Boat, +"],
+    features: ["Home", "Auto", "Flood", "Umbrella, Renters, Motorcycle, RV, Boat, +"],
   },
   {
-    icon: Building2,
+    icon: Home,
     title: "Investment Properties",
-    description: "Customized coverage for landlords and investors designed to protect you, your property, your income, and long-term investment goals.",
+    description: "Customized coverage for landlords and investors designed to protect your property, income, and long-term investment goals.",
     features: ["Rentals", "Flips", "Vacants", "Builders Risk"],
   },
   {
     icon: Building2,
     title: "Business Insurance",
     description: "Comprehensive business protection with tailored coverage for your company's unique needs and risks.",
-    features: ["Business Owners Policy (BOP)", "General Liability & Commercial Property", "Professional Liability", "Commercial Auto, Workers Comp, Cyber, +"],
+    features: ["Business Owners Policy (BOP)", "General Liability & Commercial Property", "Professional Liability", "Commercial Auto, Workers Comp, Cyber"],
   },
   {
     icon: Heart,
@@ -39,15 +39,15 @@ export function ServicesSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
+            <Card key={index} className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
+              <CardHeader className="flex-1">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <service.icon className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
                 <CardDescription className="text-pretty">{service.description}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex flex-col justify-end">
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm">

@@ -12,60 +12,68 @@ export function AboutSection() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-12">
-          <p className="text-lg text-muted-foreground text-center mb-8">
+        <div className="max-w-4xl mx-auto mb-6">
+          <p className="text-lg text-muted-foreground text-center">
             His vision is guided by four core principles:
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Reliable Guidance */}
-          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col">
+          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
             <CardHeader className="flex-1">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Shield className="h-6 w-6 text-primary" />
+              <div className="h-20 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
+                  <Shield className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Reliable Guidance</CardTitle>
               </div>
-              <CardTitle className="text-xl">Reliable Guidance</CardTitle>
-              <CardDescription className="text-pretty">
+              <CardDescription className="text-pretty flex-1">
                 You can trust that we know what we're doing—and that we're committed to providing prompt, knowledgeable, and empathetic insurance advice.
               </CardDescription>
             </CardHeader>
           </Card>
 
           {/* Unbiased Carrier Access */}
-          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col">
+          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
             <CardHeader className="flex-1">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Target className="h-6 w-6 text-primary" />
+              <div className="h-20 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
+                  <Target className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Unbiased Carrier Access</CardTitle>
               </div>
-              <CardTitle className="text-xl">Unbiased Carrier Access</CardTitle>
-              <CardDescription className="text-pretty">
+              <CardDescription className="text-pretty flex-1">
                 We'll never influence your options by having a singular carrier's logo on our door. As rates & underwriting guidelines continue to evolve, a relationship with a truly independent local agency is critical.
               </CardDescription>
             </CardHeader>
           </Card>
 
           {/* Memorable Service */}
-          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col">
+          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
             <CardHeader className="flex-1">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-primary" />
+              <div className="h-20 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
+                  <Users className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Memorable Service</CardTitle>
               </div>
-              <CardTitle className="text-xl">Memorable Service</CardTitle>
-              <CardDescription className="text-pretty">
+              <CardDescription className="text-pretty flex-1">
                 We supplement, never sacrifice, customer service with Tech & AI. Our agency is enthusiastically by your side for the life of your policy, not just the day you sign it.
               </CardDescription>
             </CardHeader>
           </Card>
 
           {/* Authentic Connections */}
-          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col">
+          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
             <CardHeader className="flex-1">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Handshake className="h-6 w-6 text-primary" />
+              <div className="h-20 mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
+                  <Handshake className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Authentic Connections</CardTitle>
               </div>
-              <CardTitle className="text-xl">Authentic Connections</CardTitle>
-              <CardDescription className="text-pretty">
+              <CardDescription className="text-pretty flex-1">
                 We build lasting relationships with carrier & referral partners whose values & processes align with ours. When we work together, our shared clients win—and our partners shine as the heroes of their story.
               </CardDescription>
             </CardHeader>
