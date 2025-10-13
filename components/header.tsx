@@ -13,13 +13,13 @@ export function Header() {
 
   return (
     <header className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-5 sm:py-6">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <img 
               src="/header.png" 
               alt="Kalpakis Insurance Group Logo" 
-              className="h-6 w-auto sm:h-8 sm:w-auto"
+              className="h-8 w-auto sm:h-12 sm:w-auto"
             />
           </div>
 
