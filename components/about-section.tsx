@@ -1,6 +1,29 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Users, Target, Handshake } from "lucide-react"
 
+const principles = [
+  {
+    icon: Shield,
+    title: "Reliable Guidance",
+    description: "You can trust that we know what we're doing—and that we're committed to providing prompt, knowledgeable, and empathetic insurance advice."
+  },
+  {
+    icon: Target,
+    title: "Unbiased Carrier Access",
+    description: "We'll never influence your options by having a singular carrier's logo on our door. As rates & underwriting guidelines continue to evolve, a relationship with a truly independent local agency is critical."
+  },
+  {
+    icon: Users,
+    title: "Memorable Service",
+    description: "We supplement, never sacrifice, customer service with Tech & AI. Our agency is enthusiastically by your side for the life of your policy, not just the day you sign it."
+  },
+  {
+    icon: Handshake,
+    title: "Authentic Connections",
+    description: "We build lasting relationships with carrier & referral partners whose values & processes align with ours. When we work together, our shared clients win—and our partners shine as the heroes of their story."
+  }
+]
+
 export function AboutSection() {
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 bg-background">
@@ -19,65 +42,23 @@ export function AboutSection() {
         </div>
 
         <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
-          {/* Reliable Guidance */}
-          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
-            <CardHeader className="flex-1">
-              <div className="h-20 mb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
-                  <Shield className="h-6 w-6 text-primary" />
+          {principles.map((principle, index) => (
+            <Card key={index} className="border-border hover:shadow-lg transition-shadow flex flex-col lg:h-[24rem]">
+              <CardHeader className="flex-1 p-6 lg:p-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <principle.icon className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-lg sm:text-xl">Reliable Guidance</CardTitle>
-              </div>
-              <CardDescription className="text-pretty flex-1 text-sm sm:text-base leading-relaxed">
-                You can trust that we know what we're doing—and that we're committed to providing prompt, knowledgeable, and empathetic insurance advice.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          {/* Unbiased Carrier Access */}
-          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
-            <CardHeader className="flex-1">
-              <div className="h-20 mb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
-                  <Target className="h-6 w-6 text-primary" />
+                <div className="h-14">
+                  <CardTitle className="text-lg sm:text-xl">{principle.title}</CardTitle>
                 </div>
-                <CardTitle className="text-lg sm:text-xl">Unbiased Carrier Access</CardTitle>
-              </div>
-              <CardDescription className="text-pretty flex-1 text-sm sm:text-base leading-relaxed">
-                We'll never influence your options by having a singular carrier's logo on our door. As rates & underwriting guidelines continue to evolve, a relationship with a truly independent local agency is critical.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          {/* Memorable Service */}
-          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
-            <CardHeader className="flex-1">
-              <div className="h-20 mb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
-                  <Users className="h-6 w-6 text-primary" />
+                <div className="h-40 mb-6 lg:mb-4">
+                  <CardDescription className="text-pretty text-sm sm:text-base leading-relaxed">
+                    {principle.description}
+                  </CardDescription>
                 </div>
-                <CardTitle className="text-lg sm:text-xl">Memorable Service</CardTitle>
-              </div>
-              <CardDescription className="text-pretty flex-1 text-sm sm:text-base leading-relaxed">
-                We supplement, never sacrifice, customer service with Tech & AI. Our agency is enthusiastically by your side for the life of your policy, not just the day you sign it.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          {/* Authentic Connections */}
-          <Card className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
-            <CardHeader className="flex-1">
-              <div className="h-20 mb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
-                  <Handshake className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-lg sm:text-xl">Authentic Connections</CardTitle>
-              </div>
-              <CardDescription className="text-pretty flex-1 text-sm sm:text-base leading-relaxed">
-                We build lasting relationships with carrier & referral partners whose values & processes align with ours. When we work together, our shared clients win—and our partners shine as the heroes of their story.
-              </CardDescription>
-            </CardHeader>
-          </Card>
+              </CardHeader>
+            </Card>
+          ))}
         </div>
 
         <div className="text-center mt-12">
