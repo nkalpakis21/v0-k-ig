@@ -62,11 +62,11 @@ export function Footer() {
                   Contact
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-accent transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
+                      <li>
+                        <a href="/privacy" className="hover:text-accent transition-colors">
+                          Privacy Policy
+                        </a>
+                      </li>
               <li>
                 <a href="#" className="hover:text-accent transition-colors">
                   Terms & Conditions

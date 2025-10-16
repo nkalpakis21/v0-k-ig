@@ -16,11 +16,13 @@ export function Header() {
       <div className="container mx-auto px-4 py-5 sm:py-6">
         <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <img 
-                      src="/logo.png" 
-                      alt="Kalpakis Insurance Group Logo" 
-                      className="h-14 w-auto sm:h-16 sm:w-auto"
-                    />
+                    <a href="/" className="flex items-center">
+                      <img 
+                        src="/logo.png" 
+                        alt="Kalpakis Insurance Group Logo" 
+                        className="h-14 w-auto sm:h-16 sm:w-auto"
+                      />
+                    </a>
                   </div>
 
           <nav className="hidden md:flex items-center gap-6">

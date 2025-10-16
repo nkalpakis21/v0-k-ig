@@ -49,10 +49,10 @@ export function AboutSection() {
                   <principle.icon className="h-6 w-6 text-primary" />
                 </div>
                 <div className="h-14">
-                  <CardTitle className="text-lg sm:text-xl">{principle.title}</CardTitle>
+                  <CardTitle className="text-2xl sm:text-xl">{principle.title}</CardTitle>
                 </div>
                 <div className="h-40 mb-6 lg:mb-4">
-                  <CardDescription className="text-pretty text-sm sm:text-base leading-relaxed">
+                  <CardDescription className="text-pretty text-lg sm:text-base leading-relaxed">
                     {principle.description}
                   </CardDescription>
                 </div>
