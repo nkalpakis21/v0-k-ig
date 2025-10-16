@@ -15,13 +15,13 @@ export function Header() {
     <header className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-5 sm:py-6">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <img 
-              src="/header.png" 
-              alt="Kalpakis Insurance Group Logo" 
-              className="h-14 w-auto sm:h-16 sm:w-auto"
-            />
-          </div>
+                  <div className="flex items-center">
+                    <img 
+                      src="/logo.png" 
+                      alt="Kalpakis Insurance Group Logo" 
+                      className="h-14 w-auto sm:h-16 sm:w-auto"
+                    />
+                  </div>
 
           <nav className="hidden md:flex items-center gap-6">
             <a href="#services" className="hover:text-accent transition-colors">

@@ -5,14 +5,14 @@ export function Footer() {
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-8 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          <div className="space-y-4">
-            <div className="flex items-center">
-              <img 
-                src="/header.png" 
-                alt="Kalpakis Insurance Group Logo" 
-                className="h-8 w-auto sm:h-10 sm:w-auto"
-              />
-            </div>
+                  <div className="space-y-4">
+                    <div className="flex items-center">
+                      <img 
+                        src="/logo.png" 
+                        alt="Kalpakis Insurance Group Logo" 
+                        className="h-8 w-auto sm:h-10 sm:w-auto"
+                      />
+                    </div>
             <p className="text-sm sm:text-base text-primary-foreground/80 text-pretty">
               Reliable Guidance | Unbiased Carrier Access | Memorable Service | Authentic Connections
             </p>
@@ -88,7 +88,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>{"1179 Rostraver Rd | Rostraver Twp, PA 15012"}    </span>
+                <span>{"1179 Rostraver Rd | Belle Vernon, PA 15012"}    </span>
               </div>
             </div>
           </div>
