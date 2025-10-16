@@ -68,7 +68,7 @@ export function Footer() {
                         </a>
                       </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <a href="/terms" className="hover:text-accent transition-colors">
                   Terms & Conditions
                 </a>
               </li>
