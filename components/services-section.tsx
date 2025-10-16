@@ -40,18 +40,18 @@ export function ServicesSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-border hover:shadow-lg transition-shadow flex flex-col h-full">
-              <CardHeader>
+              <CardHeader className="flex-1">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <service.icon className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
-                <CardDescription className="text-pretty flex-1">{service.description}</CardDescription>
+                <CardDescription className="text-pretty">{service.description}</CardDescription>
               </CardHeader>
-              <CardContent className="flex flex-col justify-end mt-auto">
-                <ul className="space-y-2 mb-6">
+              <CardContent className="flex flex-col justify-between h-50">
+                <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm">
-                      <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3" />
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
