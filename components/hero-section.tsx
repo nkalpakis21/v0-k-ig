@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import { ArrowRight, Phone } from "lucide-react"
 
 export function HeroSection() {
@@ -36,10 +37,13 @@ export function HeroSection() {
           </div>
 
           <div className="relative order-1 lg:order-2">
-            <img
+            <Image
               src="/hero.png"
               alt="Kalpakis Insurance Group"
               className="rounded-lg shadow-2xl w-full h-auto"
+              width={800}
+              height={600}
+              priority
             />
           </div>
         </div>
